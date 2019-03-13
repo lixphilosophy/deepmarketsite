@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from '@reach/router';
 
 import './Drawer.css';
 
@@ -21,7 +21,7 @@ class Drawer extends Component {
         {id: 1, name: 'Overview', link: '/overview'},
         {id: 2, name: 'News', link: '/news'},
         {id: 3, name: 'Team', link: '/team'},
-        {id: 4, name: 'Publication', link: '/publication'},
+        {id: 4, name: 'Publications', link: '/publications'},
         {id: 5, name: 'FAQ', link: '/faq'}
       ]
     }
@@ -38,11 +38,11 @@ class Drawer extends Component {
 
     const navItems = this.state.navItem.map((item, key) =>
       <li key={item.id} className="drawer-button">
-        <NavLink onClick={this.hideDrawer} to={item.link} className="border-none width-100 text-decoration-none color-white font-medium text-right curspr-pointer">
+        <Link onClick={this.hideDrawer} to={item.link} className="border-none width-100 text-decoration-none color-white font-medium text-right curspr-pointer">
           <div className="p-2">
             {item.name}
           </div>
-        </NavLink>
+        </Link>
       </li>
     );
 

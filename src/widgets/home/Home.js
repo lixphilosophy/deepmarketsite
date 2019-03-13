@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactHtmlParser from 'react-html-parser';
 
-import {HeadTitle, Data} from './Data';
+import Data from './Data';
 
 class Home extends Component {
   constructor(prop) {
@@ -17,7 +17,7 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    document.title = HeadTitle;
+    document.title = Data.title;
 
     const imageLoader = new Image();
     
@@ -40,14 +40,14 @@ class Home extends Component {
         <div className="home-title container text-center font-bold transition-all-200">
           <div className="row m-0">
             <span className="col-1 px-0"></span>
-            <div className="col-10">{this.state.dat.title}</div>
+            <div className="col-10">{this.state.dat.pageTitle}</div>
             <span className="col-1 px-0"></span>
           </div>
         </div>
         <div className="home-subtitle container text-center pt-2 transition-all-200">
           <div className="row m-0">
             <span className="col-1 px-0"></span>
-            <div className="col-10">{ReactHtmlParser(this.state.dat.subtitle)}</div>
+            <div className="col-10">{ReactHtmlParser(this.state.dat.pageSubtitle)}</div>
             <span className="col-1 px-0"></span>
           </div>
         </div>

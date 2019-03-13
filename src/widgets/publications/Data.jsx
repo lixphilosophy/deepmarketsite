@@ -1,14 +1,8 @@
-const Data = [
-]
+const Data = {
+    "article": [],
+    "title" : "DeepMarket | Publications",
+    "pageTitle": "Publications",
+    "imageIndex": []
+}
 
-const HeadTitle = "DeepMarket | Publications"
-const PageTitle = "Publications"
-
-const ImageIndex = []
-
-export {
-    Data,
-    HeadTitle,
-    PageTitle,
-    ImageIndex
-};
+export default Data;

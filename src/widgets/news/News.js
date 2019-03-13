@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ReactHtmlParser from 'react-html-parser';
 
-import {HeadTitle, PageTitle, ImageIndex, Data} from './Data';
+import Data from './Data';
 
 class News extends Component {
 
@@ -10,14 +10,14 @@ class News extends Component {
     this.prop = prop;
 
     this.state = {
-      title: PageTitle,
-      dat: Data,
-      imageIndex: ImageIndex
+      title: Data.pageTitle,
+      dat: Data.article,
+      imageIndex: Data.imageIndex
     };
   }
   
   componentDidMount() {
-    document.title = HeadTitle
+    document.title = Data.title
   }
 
   render() {

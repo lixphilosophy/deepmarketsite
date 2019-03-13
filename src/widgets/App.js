@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Router } from '@reach/router';
 
 import './style/Common.css';
 
@@ -11,6 +11,7 @@ import News from './news/News';
 import Team from './team/Team';
 import Publications from './publications/Publications';
 import FAQ from './faq/FAQ';
+import Page404 from './page404/page404';
 
 class App extends Component {
 
@@ -19,14 +20,15 @@ class App extends Component {
       <div className="outer-container-wrapper">
         <Drawer ref={(ref) => this.drawer = ref} />
         <Header onClick={() => this.drawer.showDrawer()} />
-        <Switch>
-          <Route exact={true} path={'/'} component={Home} />
-          <Route path={'/overview'} component={Overview} />
-          <Route path={'/news'} component={News} />
-          <Route path={'/team'} component={Team} />
-          <Route path={'/publications'} component={Publications} />
-          <Route exact={true} path={'/faq'} component={FAQ} />
-        </Switch>
+        <Router>
+          <Home path='/' />
+          <Overview path='/overview' />
+          <News path='/news' />
+          <Team path='/team' />
+          <Publications path='/publications'  />
+          <FAQ path='/faq' />
+          <Page404 path='*' exact />
+        </Router>
       </div>
     );
   }
