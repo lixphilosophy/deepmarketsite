@@ -11,7 +11,7 @@
 .article-image {width: 40%;}
 @media (max-width: 576px) {.article-image {width: 60%;}}
 
-.article-para {font-size: 1.6rem; line-height: 2.4rem;}
+.article-para {font-size: 1.6rem; line-height: 2.5rem;}
 .article-para a {color: white;}
 
 .home-bg, .home-bg-placeholder {
