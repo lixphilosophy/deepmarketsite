@@ -43,9 +43,11 @@ class Team extends Component {
       <div className="inner-container-wrapper">
         <div className="navbar-spam"></div>
         <div className="container pt-2 pb-1 text-center article-title font-bold">{this.state.title}</div>
-        <div className="container article p-0">
-          <div className="row m-0 py-3 px-1">
-            {gridItems}
+        <div className="article width-100">
+          <div className="container article-content p-0">
+            <div className="row m-0 py-3 px-1">
+              {gridItems}
+            </div>
           </div>
         </div>
       </div>

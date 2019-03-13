@@ -1,7 +1,16 @@
-const Data = [
-    `DeepMarket`,
-    `An Edge Computing Marketplace with Distributed Tensorflow Execution Capability`,
-    `home-bg.jpg`
-]
+const Data = {
+    "title": `DeepMarket`,
+    "subtitle": `An Edge Computing Marketplace with Distributed Tensorflow Execution Capability`,
+    "bgImage": `home-bg.jpg`,
+    "bgImagePlaceholder": `home-bg-placeholder.jpg`
+}
 
-export default Data;
+const HeadTitle = "DeepMarket | Home"
+
+const ImageIndex = []
+
+export {
+    Data,
+    HeadTitle,
+    ImageIndex
+};

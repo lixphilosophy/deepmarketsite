@@ -1,23 +1,35 @@
 import React, { Component } from 'react';
+import ReactHtmlParser from 'react-html-parser';
 
-import Data from './Data';
+import {HeadTitle, Data} from './Data';
 
 class Home extends Component {
   constructor(prop) {
     super(prop);
     this.prop = prop;
 
-    
     this.state = {
-      dat: Data,
-      bgStyle: {
-
-      }
+      dat: Data
     };
+
+    this.bgImage = null;
+    this.bgImagePlacerholder = require('../../static/img/' + this.state.dat.bgImagePlaceholder);
   }
 
   componentDidMount() {
-    document.title = "DeepMarket | Home"
+    document.title = HeadTitle;
+
+    const imageLoader = new Image();
+    
+    imageLoader.src = require('../../static/img/' + this.state.dat.bgImage);
+
+    imageLoader.onload = () => {
+      this.bgImage.setAttribute(
+        'style',
+        `background-image: url(${require('../../static/img/' + this.state.dat.bgImage)})`
+      );
+      this.bgImage.classList.add('bg-fade-in');
+    };
   }
 
   render() {
@@ -28,18 +40,19 @@ class Home extends Component {
         <div className="home-title container text-center font-bold transition-all-200">
           <div className="row m-0">
             <span className="col-1 px-0"></span>
-            <div className="col-10">{this.state.dat[0]}</div>
+            <div className="col-10">{this.state.dat.title}</div>
             <span className="col-1 px-0"></span>
           </div>
         </div>
         <div className="home-subtitle container text-center pt-2 transition-all-200">
           <div className="row m-0">
             <span className="col-1 px-0"></span>
-            <div className="col-10">{this.state.dat[1]}</div>
+            <div className="col-10">{ReactHtmlParser(this.state.dat.subtitle)}</div>
             <span className="col-1 px-0"></span>
           </div>
         </div>
-        <div className="absolute top-0 all-100 home-bg" style={{backgroundImage: `url(${require('../../static/img/' + this.state.dat[2])})`}}></div>
+        <div className="absolute top-0 all-100 home-bg" ref={bgImage => this.bgImage = bgImage}></div>
+        <div className="absolute top-0 all-100 home-bg-placeholder" style={{backgroundImage: `url(${this.bgImagePlacerholder})`}}></div>
       </div>
     );
   }
