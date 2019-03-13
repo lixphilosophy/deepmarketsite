@@ -9,7 +9,7 @@ import Home from './home/Home';
 import Overview from './overview/Overview';
 import News from './news/News';
 import Team from './team/Team';
-import Pulication from './publication/Pulication';
+import Publications from './publications/Publications';
 import FAQ from './faq/FAQ';
 
 class App extends Component {
@@ -21,10 +21,10 @@ class App extends Component {
         <Header onClick={() => this.drawer.showDrawer()} />
         <Switch>
           <Route exact={true} path={'/'} component={Home} />
-          <Route exact={true} path={'/overview'} component={Overview} />
-          <Route exact={true} path={'/news'} component={News} />
-          <Route exact={true} path={'/team'} component={Team} />
-          <Route exact={true} path={'/publication'} component={Pulication} />
+          <Route path={'/overview'} component={Overview} />
+          <Route path={'/news'} component={News} />
+          <Route path={'/team'} component={Team} />
+          <Route path={'/publications'} component={Publications} />
           <Route exact={true} path={'/faq'} component={FAQ} />
         </Switch>
       </div>

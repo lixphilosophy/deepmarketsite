@@ -1,8 +1,8 @@
 const Data = [
 ]
 
-const HeadTitle = "DeepMarket | Pulication"
-const PageTitle = "Pulication"
+const HeadTitle = "DeepMarket | Publications"
+const PageTitle = "Publications"
 
 const ImageIndex = []
 

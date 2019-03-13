@@ -13,7 +13,7 @@ class Header extends Component {
         {name: 'Overview', link: '/overview' },
         {name: 'News', link: '/news' },
         {name: 'Team', link: '/team' },
-        {name: 'Publication', link: '/publication' },
+        {name: 'Publications', link: '/publications' },
         {name: 'FAQ', link: '/faq' }
       ]
     };
