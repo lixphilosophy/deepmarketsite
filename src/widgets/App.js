@@ -12,7 +12,6 @@ import Team from './team/Team';
 import Publications from './publications/Publications';
 import FAQ from './faq/FAQ';
 import Page404 from './page404/page404';
-import Pdf from '../static/img/2019-ECOFEC-DeepMarket.pdf';
 
 class App extends Component {
 
@@ -29,7 +28,6 @@ class App extends Component {
           <Route path={'/publications'} component={Publications} />
           <Route path={'/faq'} component={FAQ} />
           <Route path={'*'} component={Page404}/>
-          <Route path={'/2019'} component={Pdf} />
         </Switch>
       </div>
     );
