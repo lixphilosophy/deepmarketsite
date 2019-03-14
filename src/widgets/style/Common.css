@@ -1,11 +1,12 @@
 /******************************************/
 /* page related */
 
-.article {overflow-x: hidden; max-width: 100%;}
+.article {overflow-x: hidden; max-width: 100%; -webkit-overflow-scrolling: touch;}
 .article::-webkit-scrollbar {display: none;}
 
 .article-title {font-size: 3rem;}
 .article-content {max-width: 80rem !important; text-align: justify;}
+@media (max-width: 414px) {.article-content {text-align: left;}}
 
 .article-subtitle {font-size: 2.3rem !important;}
 .article-image {width: 40%;}

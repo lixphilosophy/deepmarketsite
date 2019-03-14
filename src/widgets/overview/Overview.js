@@ -4,7 +4,7 @@ import ReactHtmlParser from 'react-html-parser';
 import Data from './Data';
 
 class Overview extends Component {
-  
+
   constructor(prop) {
     super(prop);
     this.prop = prop;
