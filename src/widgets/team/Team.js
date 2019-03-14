@@ -33,6 +33,7 @@ class Team extends Component {
                 <div className="grid-item-name font-bold pb-0h">{ReactHtmlParser(item.name)}</div>
                 <div className="grid-item-desc">{item.position}</div>
                 <div className="grid-item-desc">{item.desc}</div>
+                <div className="grid-item-desc">{item.school}</div>
               </div>
             </div>
           </div>
