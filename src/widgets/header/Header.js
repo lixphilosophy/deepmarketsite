@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from '@reach/router';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
@@ -23,9 +23,9 @@ class Header extends Component {
 
     const navItems = this.state.navItem.map((item, key) =>
       <li key={'header'+key} className=" d-inline-block my-auto font-bold">
-        <Link to={item.link} className="nav-item px-1 py-1h mx-1 text-decoration-none color-white">
+        <NavLink to={item.link} className="nav-item px-1 py-1h mx-1 text-decoration-none color-white">
           {item.name}
-        </Link>
+        </NavLink>
       </li>
     );
 
@@ -35,7 +35,7 @@ class Header extends Component {
           <span className="col-1 px-0"></span>
           <div className="col-10 px-0">
             <div className="height-100 d-inline-flex">
-              <Link to='/' className="logo my-auto transition-all-200" />
+              <Link to={'/'} className="logo my-auto transition-all-200" />
             </div>
 
             <div className="height-100 float-right d-block d-sm-none">
