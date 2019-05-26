@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactHtmlParser from 'react-html-parser';
+import { Redirect } from 'react-router-dom';
 
 import Data from './Data';
 
@@ -26,6 +27,13 @@ class Page404 extends Component {
       var uniIndex = 'elem'+index;
       return (<div key={uniIndex} className={elem[1]}>{ReactHtmlParser(elem[0])}</div>);
     });
+
+    var regex = /\/\/+/g;
+    var pathname = this.props.location.pathname; 
+    if(regex.test(pathname)) {
+      pathname = pathname.replace(regex, '/');
+      return <Redirect to={pathname} />
+    }
 
     return (
       <div className="inner-container-wrapper">
