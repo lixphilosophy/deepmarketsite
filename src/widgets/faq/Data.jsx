@@ -6,7 +6,7 @@ const Data = {
 
         [`How can I contribute to the project?`, 'article-subtitle font-sm-bold pb-2'],
 
-        [`This product is open-source so anybody can contribute to its development. To submit changes to our <a href="https://github.com/shared-systems" id="link" target="_blank">Github</a> repository, please open a pull request.`, 'article-para'],
+        [`This product is open-source so anybody can contribute to its development. To submit changes to our <a href="https://github.com/deepmarket" id="link" target="_blank">Github</a> repository, please open a pull request.`, 'article-para'],
     ],
     "title" : "DeepMarket | FAQ",
     "pageTitle": "Frequently Asked Questions",
