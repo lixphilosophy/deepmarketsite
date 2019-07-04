@@ -1,6 +1,8 @@
 const Data = {
     "article": [
-        [`<b>May, 2019</b> - Congratulations to Soyoung for successfully defending her Master thesis on benchmarking DeepMarket.`, 'article-para'],
+        [`<b>June, 2019</b> - Our demo is accepted to ACM SIGCOMM. Sam will be presenting the demo in Beijing, China!`, 'article-para'],
+
+        [`<b>May, 2019</b> - Congratulations to Soyoung for successfully defending her Master thesis on benchmarking DeepMarket.`, 'article-para pt-3'],
 
         [`<b>April, 2019</b> - We presented our first paper (DeepMarket: An Edge Computing Marketplace with Distributed TensorFlow Execution Capability) at the First International IEEE Workshop on the Economics of Fog, Edge and Cloud Computing (ECOFEC 2019), in Paris, France. The paper was well received by the community and we are looking forward to expanding DeepMarket’s network to include other universities and research groups.`, 'article-para pt-3'],
         
