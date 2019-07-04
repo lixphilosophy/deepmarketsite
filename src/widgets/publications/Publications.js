@@ -35,7 +35,7 @@ class Pulication extends Component {
     return (
       <div className="inner-container-wrapper">
         <div className="navbar-spam"></div>
-        <div className="container pt-2 pb-1 text-center article-title font-bold">{this.state.title}</div>
+        {/* <div className="container pt-2 pb-1 text-center article-title font-bold">{this.state.title}</div> */}
         <div className="article width-100">
           <div className="container article-content p-0">
             <div className="row m-0 pb-3">
