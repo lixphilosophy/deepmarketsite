@@ -9,6 +9,7 @@ const Data = [
   {name: "Amarjit Arvind Jadhav", position: "System Security", desc: "Graduate Student", school: "Portland State University", img: "amarjit.jpg" },
   {name: "Shraddha Bhise", position: "System Security", desc: "Graduate Student", school: "Portland State University", img: "shraddha.jpg" },
   {name: "Rohan Patel", position: "Backend Developer", desc: "Graduate Student", school: "Portland State University", img: "rohan.jpg" },
+  {name: "Logan Ballard", position: "Backend Developer", desc: "Graduate Student", school: "Portland State University", img: "logan.jpeg" },
 ]
 
 const HeadTitle = "DeepMarket | Team"
