@@ -45,3 +45,4 @@ $ python main.py
 * [Shraddha Bhise](mailto:sbhise@pdx.edu)
 * [Rohan Patel](mailto:roh4@pdx.edu)
 * [Logan Ballard](mailto:lballard@pdx.edu)
+* [Prerna Agarwal](mailto:prerna@pdx.edu)
