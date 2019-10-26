@@ -1,6 +1,6 @@
 # DeepMarket Official Website
 
-The site is currently hosting on [https://deepmarket.cs.pdx.edu/](https://deepmarket.cs.pdx.edu/).
+The site is written by `ReactJS` and currently hosting on [https://deepmarket.cs.pdx.edu/](https://deepmarket.cs.pdx.edu/).
 If you found any problem, please help us to fix it and open a pull request.
 
 #### Project Synopsis
@@ -13,29 +13,7 @@ resources in exchange for tokens or use the resources of others in _the pool_.
 This project is in active development and is being maintained by the [team members](#team-members) listed below.
 If you would like to submit changes, please open a pull request.
 
-Project repo: [https://github.com/shared-systems](https://github.com/shared-systems)
-
-#### Required OS Dependencies
-* MacOS or Linux (Ubuntu 14.04+)
-* Python 3.6
-
-#### Required Application Dependencies
-* PyQt _5.10_
-* sip _4.19.7_
-* requests >= _2.20.0_
-* psutil _5.4.7_
-
-#### To install:
-
-```bash
-$ python -m pip install -r requirements.txt
-```
-
-#### To launch to the application:
-
-```bash
-$ python main.py
-```
+Project repo: [https://github.com/deepmarket](https://github.com/deepmarket)
 
 #### Team Members:
 * [Susham Yerabolu](mailto:yerabolu@pdx.edu)
@@ -46,3 +24,18 @@ $ python main.py
 * [Rohan Patel](mailto:roh4@pdx.edu)
 * [Logan Ballard](mailto:lballard@pdx.edu)
 * [Prerna Agarwal](mailto:prerna@pdx.edu)
+* [Fenting Lin](mailto:fen@pdx.edu)
+
+#### Required OS Dependencies
+* node.js (Installation instruction can be found [here](https://www.npmjs.com/get-npm))
+
+#### Instruction to update website
+After you pull down this repo, run the following command to install all the required package:
+```
+npm install
+```
+
+To deploy the website to be the raw html site, run:
+```
+npm run build
+```
