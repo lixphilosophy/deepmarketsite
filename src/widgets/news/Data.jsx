@@ -1,6 +1,8 @@
 const Data = {
     "article": [
-        [`<b>June, 2019</b> - Our demo is accepted to ACM SIGCOMM. Sam will be presenting the demo in Beijing, China!`, 'article-para'],
+        [`<b>February 2020</b> - Payal gave a demo of DeepMarket at Intel in Hillsboro, OR. The demo day was organized by Oregon Mesa and was attended by high school and middle schools students (with high minority populations) as well as many Intel employees. We would like to thank Intel folks who visited our booth and gave useful comments on our project.`, 'article-para'],
+
+        [`<b>June, 2019</b> - Our demo is asccepted to ACM SIGCOMM. Sam will be presenting the demo in Beijing, China!`, 'article-para pt-3'],
 
         [`<b>May, 2019</b> - Congratulations to Soyoung for successfully defending her Master thesis on benchmarking DeepMarket.`, 'article-para pt-3'],
 

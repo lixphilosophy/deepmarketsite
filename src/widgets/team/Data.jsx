@@ -1,6 +1,6 @@
 const Data = [
   {name: `<a target="_blank" href="http://web.cecs.pdx.edu/~aryafare/">Prof. Ehsan Aryafar</a>`, position: "Assistant Professor", desc: "Portland State University", school: "", img: "aryafar.jpg" },
-  {name: `<a target="_blank" href="http://zmliu.org/">Prof. Zhenming Liu</a>`, position: "Assistant Professor", desc: "The College of William & Mary", school: "", img: "zhenming.jpg" },
+  {name: `<a target="_blank" href="https://engineering.purdue.edu/ECE/People/ptPeopleListing?group_id=2571&resource_id=218378">Prof. Christopher Brinton</a>`, position: "Assistant Professor", desc: "Purdue University", school: "", img: "christopher.jpeg" },
   {name: `<a target="_blank" href="https://www.andrew.cmu.edu/user/cjoewong/">Prof. Carlee Joe-Wong</a>`, position: "Assistant Professor", desc: "Carnegie Mellon University", school: "", img: "carlee.jpg" },
   {name: "Dr. Xiaoxi Zhang", position: "Post-Doctoral Researcher", desc: "Carnegie Mellon University", school: "", img: "xiaoxi.jpg" },
   {name: "Xuanzhe (Martin) Li", position: "Frontend Developer", desc: "Undergraduate Student", school: "Portland State University", img: "martin.jpg" },
